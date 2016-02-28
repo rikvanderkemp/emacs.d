@@ -41,4 +41,4 @@
 (require 'init-emmet-mode)
 (require 'init-scss-mode)
 (require 'init-shortcuts)
-
+(require 'init-auto-complete)
