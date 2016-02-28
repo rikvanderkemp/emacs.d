@@ -23,3 +23,8 @@
 (require 'init-elpy)
 (require 'init-flycheck)
 (require 'init-magit)
+(require 'init-autopep8)
+(require 'init-helm)
+(require 'init-web-mode)
+(require 'init-php-mode)
+(require 'init-markdown)
