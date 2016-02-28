@@ -15,6 +15,14 @@
 (setq tab-width 4)          
 (setq indent-tabs-mode nil) ; Force use of spaces
 
+;; Moving backups files away from original directory
+(setq backup-directory-alist
+          `((".*" . ,temporary-file-directory)))
+
+(setq auto-save-file-name-transforms
+          `((".*" ,temporary-file-directory t)))
+
+
 ;; Bootstrap
 
 (require 'init-melpa)
@@ -28,3 +36,9 @@
 (require 'init-web-mode)
 (require 'init-php-mode)
 (require 'init-markdown)
+(require 'init-projectile)
+(require 'init-expand-region)
+(require 'init-emmet-mode)
+(require 'init-scss-mode)
+(require 'init-shortcuts)
+
