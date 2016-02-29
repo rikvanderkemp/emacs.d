@@ -42,3 +42,4 @@
 (require 'init-scss-mode)
 (require 'init-shortcuts)
 (require 'init-auto-complete)
+(require 'init-ox-reveal)
