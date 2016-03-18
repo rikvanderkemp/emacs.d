@@ -44,3 +44,4 @@
 (require 'init-auto-complete)
 (require 'init-writeroom)
 (require 'init-ox-reveal)
+(require 'init-neotree)

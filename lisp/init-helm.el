@@ -10,5 +10,8 @@
 (global-set-key (kbd "C-x r b")                      'helm-filtered-bookmarks)
 (global-set-key (kbd "C-x C-f")                      'helm-find-files)
 
+;; Addons
+(require-package 'helm-projectile)
+(helm-projectile-on)
 
 (provide 'init-helm)
