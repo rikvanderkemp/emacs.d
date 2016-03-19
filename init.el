@@ -45,3 +45,6 @@
 (require 'init-writeroom)
 (require 'init-ox-reveal)
 (require 'init-neotree)
+(require 'init-tern)
+(require 'init-js2-mode)
+(require 'init-js3-mode)
