@@ -1,6 +1,13 @@
 ;; Bootstrapping
 
 ;; I want to divide my configs into seperate files in order to keep things clean
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
 ;; I switch between linux and osx, so keep track of what I am currently working on
@@ -28,6 +35,7 @@
 (require 'init-melpa)
 (require 'init-themes)
 (require 'init-exec-path)
+;;(require 'init-gpg-agent)
 (require 'init-elpy)
 (require 'init-flycheck)
 (require 'init-magit)
@@ -53,3 +61,21 @@
 (require 'init-lua-mode) ;; All related LUA packages are configured here as well
 (require 'init-go) ;; All GO related config can be found here
 (require 'init-virtualenv)
+(require 'init-mastodon)
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (emojify mastodon yaml-mode graphviz-dot-mode writeroom-mode web-mode virtualenvwrapper tern-auto-complete spacemacs-theme scss-mode rust-mode py-autopep8 powerline php-mode ox-reveal neotree monokai-theme markdown-mode magit lua-mode js3-mode js2-mode helm-projectile go-mode go-autocomplete flycheck expand-region exec-path-from-shell emmet-mode elpy buffer-move))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
