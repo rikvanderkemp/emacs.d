@@ -35,7 +35,6 @@
 (require 'init-melpa)
 (require 'init-themes)
 (require 'init-exec-path)
-;;(require 'init-gpg-agent)
 (require 'init-elpy)
 (require 'init-flycheck)
 (require 'init-magit)
